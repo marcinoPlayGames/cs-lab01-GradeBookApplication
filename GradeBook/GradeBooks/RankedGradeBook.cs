@@ -29,7 +29,6 @@ namespace GradeBook.GradeBooks
             }
 
             Array.Sort(LetterTop);
-            Console.WriteLine(LetterTop.Length);
             double LetterPlace = 0;
             double c = LetterTop.Length;
             double d = 0;
@@ -41,9 +40,6 @@ namespace GradeBook.GradeBooks
                 {
                     LetterPlace = (d / c) * 100;
                 }
-                double LetterPlace2 = ((j + 1) / c) * 100;
-                Console.WriteLine(LetterTop[j] + " " + j + " " + LetterPlace + " " + LetterPlace2 + " " + averageGrade);
-                Console.WriteLine(LetterTop[j] == averageGrade);
             }
 
             if (LetterPlace <= 20)
